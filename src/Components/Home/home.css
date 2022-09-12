@@ -1,0 +1,18 @@
+#aboutustitle {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  color: #161b22;
+  font-size: 4em;
+}
+
+#aboutustext {
+  color: black;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.1em;
+}
+
+#aboutusbutton {
+  text-align: center;
+}

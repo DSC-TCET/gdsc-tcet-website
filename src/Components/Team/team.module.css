@@ -1,0 +1,32 @@
+.teamtitle {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  color: #161b22;
+  font-size: 4em;
+}
+
+.card{
+  max-width: 17rem;
+  transition: .5s ease-in-out;
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 20px rgb(0 0 0 / 0.5);
+}
+
+.mask{
+  cursor: "pointer";
+  background-color: rgba(251, 251, 251, 0.15);
+}
+
+.tab:hover{
+  color: rgb(32, 32, 165);
+}
+
+@media (min-width: 768px) {
+  .MuiTabs-flexContainer {
+    justify-content: center;
+  }
+}
