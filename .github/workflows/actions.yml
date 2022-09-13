@@ -1,7 +1,8 @@
 on:
   push:
     branches: master
-
+env:
+  CI: false
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
