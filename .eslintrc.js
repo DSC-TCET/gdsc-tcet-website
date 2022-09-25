@@ -23,5 +23,6 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react/no-unknown-property': ['error', { ignore: ['jsx'] }],
     'no-console': 'off',
+    'linebreak-style': ['error', 'windows'],
   },
 };
