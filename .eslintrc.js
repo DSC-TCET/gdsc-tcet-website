@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   env: {
     browser: true,
@@ -23,6 +24,6 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react/no-unknown-property': ['error', { ignore: ['jsx'] }],
     'no-console': 'off',
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': 'off',
   },
 };
