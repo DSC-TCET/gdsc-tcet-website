@@ -216,6 +216,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -233,6 +234,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -278,6 +287,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -295,6 +305,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -344,6 +362,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -361,6 +380,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -410,6 +437,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -427,6 +455,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -471,6 +507,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -488,6 +525,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -532,6 +577,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -549,6 +595,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -598,6 +652,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -615,6 +670,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
@@ -664,6 +727,7 @@ function Team() {
                           <MDBCardBody>
                             <MDBCardTitle>{item.name}</MDBCardTitle>
                             <MDBCardText>{item.post}</MDBCardText>
+                            <MDBCardText>{item.quote}</MDBCardText>
                           </MDBCardBody>
                           <MDBCardFooter className="text-muted">
                             <a
@@ -681,6 +745,14 @@ function Team() {
                               target="_blank"
                             >
                               <i className="fab fa-linkedin fa-2x" />
+                            </a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                              rel="noreferrer"
+                              href={item.twitterUrl}
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter fa-2x" />
                             </a>
                           </MDBCardFooter>
                         </MDBCard>
