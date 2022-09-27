@@ -25,7 +25,7 @@ export const Lead = [
     githuburl: 'https://github.com/cdhiraj40',
     linkedinurl: 'https://www.linkedin.com/in/cdhiraj40/',
     twitterUrl: 'https://www.twitter.com/cdhiraj40/',
-    quote: 'I like to build stuff to make a difference in the world" idk probably me',
+    quote: '"I like to build stuff to make a difference in the world"',
   },
 ];
 export const marketing = [
