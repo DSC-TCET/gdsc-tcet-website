@@ -13,6 +13,7 @@ const TeamCard = ({ profile, name, position, quote, socials, color }) => {
     <div
       className='bg-gray-100 m-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-500 overflow-hidden h-max pb-4'
       onClick={() => setExtend(!extend)}
+      style={{ maxWidth: "400px" }}
     >
       <div
         id='profile-bg'
