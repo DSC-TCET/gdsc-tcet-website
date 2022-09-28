@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable no-multiple-empty-lines */
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+/* eslint-disable */
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import {
   MDBCard,
   MDBCardBody,
@@ -12,22 +13,22 @@ import {
   MDBCardFooter,
   MDBCardImage,
   MDBRipple,
-} from 'mdb-react-ui-kit';
-import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import LanguageIcon from '@mui/icons-material/Language';
-import AndroidIcon from '@mui/icons-material/Android';
-import CloudIcon from '@mui/icons-material/Cloud';
-import PersonIcon from '@mui/icons-material/Person';
-import EventIcon from '@mui/icons-material/Event';
-import PlaceIcon from '@mui/icons-material/Place';
-import PaletteIcon from '@mui/icons-material/Palette';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import CodeIcon from '@mui/icons-material/Code';
+} from "mdb-react-ui-kit";
+import { motion } from "framer-motion";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import LanguageIcon from "@mui/icons-material/Language";
+import AndroidIcon from "@mui/icons-material/Android";
+import CloudIcon from "@mui/icons-material/Cloud";
+import PersonIcon from "@mui/icons-material/Person";
+import EventIcon from "@mui/icons-material/Event";
+import PlaceIcon from "@mui/icons-material/Place";
+import PaletteIcon from "@mui/icons-material/Palette";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import CodeIcon from "@mui/icons-material/Code";
 import {
   Lead,
   marketing,
@@ -37,17 +38,19 @@ import {
   logistics,
   press,
   eventsCoordinator,
-} from './data';
-import classes from './team.module.css';
+} from "./data";
+import classes from "./team.module.css";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TeamCard from "./TeamCard";
 
 function TabPanel(props) {
-  const {
-    children, value, index, ...other
-  } = props;
+  const { children, value, index, ...other } = props;
 
   return (
     <div
-      role="tabpanel"
+      role='tabpanel'
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -72,7 +75,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
   };
 }
 
@@ -83,14 +86,14 @@ function Team() {
     setValue(newValue);
   };
   return (
-    <div style={{ background: '#fafafa' }}>
-      <Container style={{ paddingTop: '3vh' }}>
-        <Row style={{ paddingBottom: '5vh' }}>
+    <div style={{ background: "#fafafa" }}>
+      <Container style={{ paddingTop: "3vh" }}>
+        <Row style={{ paddingBottom: "5vh" }}>
           <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
             transition={{
-              type: 'spring',
+              type: "spring",
               stiffness: 100,
               delay: 0.5,
               duration: 0.5,
@@ -104,667 +107,482 @@ function Team() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0, duration: 1 }}
           >
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{ width: "100%" }}>
               <Box
-                style={{ textAlign: 'center' }}
-                sx={{ borderBottom: 1, borderColor: 'divider' }}
+                style={{ textAlign: "center" }}
+                sx={{ borderBottom: 1, borderColor: "divider" }}
               >
                 <Tabs
                   value={value}
                   onChange={handleChange}
-                  variant="scrollable"
+                  variant='scrollable'
                   scrollButtons
                   allowScrollButtonsMobile
                 >
-                  
                   <Tab
                     icon={<PersonIcon />}
-                    label="Lead"
+                    label='Lead'
                     {...a11yProps(0)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<CodeIcon />}
-                    label="Technical"
+                    label='Technical'
                     {...a11yProps(1)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<CloudIcon />}
-                    label="Secretariat"
+                    label='Secretariat'
                     {...a11yProps(2)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<PlaceIcon />}
-                    label="Logistics"
+                    label='Logistics'
                     className={classes.tab}
                     {...a11yProps(3)}
                   />
 
-
                   <Tab
                     icon={<EventIcon />}
-                    label="Event"
+                    label='Event'
                     {...a11yProps(4)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<AssignmentIcon />}
-                    label="Marketing"
+                    label='Marketing'
                     {...a11yProps(5)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<PaletteIcon />}
-                    label="Press"
+                    label='Press'
                     {...a11yProps(6)}
                     className={classes.tab}
                   />
 
-
                   <Tab
                     icon={<LanguageIcon />}
-                    label="Outreach"
+                    label='Outreach'
                     {...a11yProps(7)}
                     className={classes.tab}
                   />
-
-
                 </Tabs>
               </Box>
 
               {/* Lead Start */}
-
               <TabPanel value={value} index={0}>
-                <Row>
-                  {Lead.map((item, index) => (
-                    <Col style={{ paddingBottom: '3vh' }} md={4} sm={12} lg={4}>
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-16'>
+                  {Lead.map((item, i) => {
+                    let color = "#E84435";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
-              
               {/* Lead End */}
-
 
               {/* Technical Start */}
 
               <TabPanel value={value} index={1}>
-                <Row>
-                  {technical.map((item, index) => (
-                    <Col style={{ paddingBottom: '3vh' }} md={4} sm={12} lg={4}>
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {technical.map((item, i) => {
+                    let color = "#089D57";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Technical End */}
 
-
               {/* Secretariat Start */}
 
               <TabPanel value={value} index={2}>
-                <Row>
-                  {secretariat.map((item, index) => (
-                    <Col
-                      style={{ paddingBottom: '3vh' }}
-                      md={4}
-                      sm={12}
-                      lg={4}
-                    >
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {secretariat.map((item, i) => {
+                    let color = "#2376E5";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Secretariat End */}
 
-
               {/* Logistics Start */}
 
               <TabPanel value={value} index={3}>
-                <Row>
-                  {logistics.map((item, index) => (
-                    <Col
-                      style={{ paddingBottom: '3vh' }}
-                      md={12}
-                      sm={12}
-                      lg={12}
-                    >
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {logistics.map((item, i) => {
+                    let color = "#F6BA17";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Logistics End */}
 
-
               {/* Event Start */}
 
               <TabPanel value={value} index={4}>
-                <Row>
-                  {eventsCoordinator.map((item, index) => (
-                    <Col style={{ paddingBottom: '3vh' }} md={4} sm={12} lg={4}>
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {eventsCoordinator.map((item, i) => {
+                    let color = "#E84435";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Event End */}
 
-
               {/* Marketing Start */}
 
               <TabPanel value={value} index={5}>
-                <Row className="justify-content-center">
-                  {marketing.map((item, index) => (
-                    <Col style={{ paddingBottom: '5vh' }} md={6} sm={12} lg={4}>
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {marketing.map((item, i) => {
+                    let color = "#089D57";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Marketing End */}
 
-
               {/* Press Start */}
 
               <TabPanel value={value} index={6}>
-                <Row>
-                  {press.map((item, index) => (
-                    <Col
-                      style={{ paddingBottom: '3vh' }}
-                      md={12}
-                      sm={12}
-                      lg={12}
-                    >
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {press.map((item, i) => {
+                    let color = "#2376E5";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Press End */}
 
-
               {/* Outreach Start */}
 
               <TabPanel value={value} index={7}>
-                <Row>
-                  {outreach.map((item, index) => (
-                    <Col
-                      style={{ paddingBottom: '3vh' }}
-                      md={12}
-                      sm={12}
-                      lg={12}
-                    >
-                      <div className="d-flex justify-content-center">
-                        <MDBCard
-                          key={index}
-                          background="light"
-                          alignment="center"
-                          className={classes.card}
-                        >
-                          <MDBCardHeader>
-                            <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                            >
-                              <MDBCardImage
-                                style={{ borderRadius: '50%' }}
-                                src={item.imageurl}
-                                fluid
-                                alt="..."
-                              />
-
-                              <div className={`mask ${classes.mask}`} />
-                            </MDBRipple>
-                          </MDBCardHeader>
-                          <MDBCardBody>
-                            <MDBCardTitle>{item.name}</MDBCardTitle>
-                            <MDBCardText>{item.post}</MDBCardText>
-                            <MDBCardText>{item.quote}</MDBCardText>
-                          </MDBCardBody>
-                          <MDBCardFooter className="text-muted">
-                            <a
-                              rel="noreferrer"
-                              href={item.githuburl}
-                              target="_blank"
-                              className="fab fa-github fa-2x"
-                            >
-                              <i />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.linkedinurl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-linkedin fa-2x" />
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a
-                              rel="noreferrer"
-                              href={item.twitterUrl}
-                              target="_blank"
-                            >
-                              <i className="fab fa-twitter fa-2x" />
-                            </a>
-                          </MDBCardFooter>
-                        </MDBCard>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                  {outreach.map((item, i) => {
+                    let color = "#F6BA17";
+                    const {
+                      name,
+                      post: position,
+                      imageurl: profile,
+                      githuburl,
+                      linkedinurl,
+                      twitterUrl,
+                      quote,
+                    } = item;
+                    let socials = [
+                      {
+                        link: githuburl,
+                        icon: (
+                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: linkedinurl,
+                        icon: (
+                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                      {
+                        link: twitterUrl,
+                        icon: (
+                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
+                        ),
+                      },
+                    ];
+                    return (
+                      <TeamCard
+                        profile={profile}
+                        name={name}
+                        position={position}
+                        quote={quote}
+                        socials={socials}
+                        color={color}
+                      />
+                    );
+                  })}
+                </div>
               </TabPanel>
 
               {/* Outreach End */}
-
-
             </Box>
           </motion.div>
         </Row>
