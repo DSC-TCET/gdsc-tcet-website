@@ -45,6 +45,41 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TeamCard from "./TeamCard";
 
+const data = [
+  {
+    data: Lead,
+    color: "#E84435",
+  },
+  {
+    data: technical,
+    color: "#089D57",
+  },
+  {
+    data: secretariat,
+    color: "#2376E5",
+  },
+  {
+    data: logistics,
+    color: "#F6BA17",
+  },
+  {
+    data: eventsCoordinator,
+    color: "#E84435",
+  },
+  {
+    data: marketing,
+    color: "#089D57",
+  },
+  {
+    data: press,
+    color: "#2376E5",
+  },
+  {
+    data: outreach,
+    color: "#F6BA17",
+  },
+];
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -177,412 +212,60 @@ function Team() {
                 </Tabs>
               </Box>
 
-              {/* Lead Start */}
-              <TabPanel value={value} index={0}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {Lead.map((item, i) => {
-                    let color = "#E84435";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Lead End */}
-
-              {/* Technical Start */}
-
-              <TabPanel value={value} index={1}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {technical.map((item, i) => {
-                    let color = "#089D57";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Technical End */}
-
-              {/* Secretariat Start */}
-
-              <TabPanel value={value} index={2}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {secretariat.map((item, i) => {
-                    let color = "#2376E5";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Secretariat End */}
-
-              {/* Logistics Start */}
-
-              <TabPanel value={value} index={3}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {logistics.map((item, i) => {
-                    let color = "#F6BA17";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Logistics End */}
-
-              {/* Event Start */}
-
-              <TabPanel value={value} index={4}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {eventsCoordinator.map((item, i) => {
-                    let color = "#E84435";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Event End */}
-
-              {/* Marketing Start */}
-
-              <TabPanel value={value} index={5}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {marketing.map((item, i) => {
-                    let color = "#089D57";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Marketing End */}
-
-              {/* Press Start */}
-
-              <TabPanel value={value} index={6}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {press.map((item, i) => {
-                    let color = "#2376E5";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Press End */}
-
-              {/* Outreach Start */}
-
-              <TabPanel value={value} index={7}>
-                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
-                  {outreach.map((item, i) => {
-                    let color = "#F6BA17";
-                    const {
-                      name,
-                      post: position,
-                      imageurl: profile,
-                      githuburl,
-                      linkedinurl,
-                      twitterUrl,
-                      quote,
-                    } = item;
-                    let socials = [
-                      {
-                        link: githuburl,
-                        icon: (
-                          <GitHubIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: linkedinurl,
-                        icon: (
-                          <LinkedInIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                      {
-                        link: twitterUrl,
-                        icon: (
-                          <TwitterIcon sx={{ fontSize: 35, color: color }} />
-                        ),
-                      },
-                    ];
-                    return (
-                      <TeamCard
-                        profile={profile}
-                        name={name}
-                        position={position}
-                        quote={quote}
-                        socials={socials}
-                        color={color}
-                      />
-                    );
-                  })}
-                </div>
-              </TabPanel>
-
-              {/* Outreach End */}
+              {data.map((item, i) => {
+                const { data, color } = item;
+                return (
+                  <TabPanel key={i} value={value} index={i}>
+                    <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
+                      {data.map((item, i) => {
+                        const {
+                          name,
+                          post: position,
+                          imageurl: profile,
+                          githuburl,
+                          linkedinurl,
+                          twitterUrl,
+                          quote,
+                        } = item;
+                        let socials = [
+                          {
+                            link: githuburl,
+                            icon: (
+                              <GitHubIcon sx={{ fontSize: 35, color: color }} />
+                            ),
+                          },
+                          {
+                            link: linkedinurl,
+                            icon: (
+                              <LinkedInIcon
+                                sx={{ fontSize: 35, color: color }}
+                              />
+                            ),
+                          },
+                          {
+                            link: twitterUrl,
+                            icon: (
+                              <TwitterIcon
+                                sx={{ fontSize: 35, color: color }}
+                              />
+                            ),
+                          },
+                        ];
+                        return (
+                          <TeamCard
+                            profile={profile}
+                            name={name}
+                            position={position}
+                            quote={quote}
+                            socials={socials}
+                            color={color}
+                          />
+                        );
+                      })}
+                    </div>
+                  </TabPanel>
+                );
+              })}
             </Box>
           </motion.div>
         </Row>
