@@ -179,7 +179,7 @@ function Team() {
 
               {/* Lead Start */}
               <TabPanel value={value} index={0}>
-                <div className='w-full grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {Lead.map((item, i) => {
                     let color = "#E84435";
                     const {
@@ -230,7 +230,7 @@ function Team() {
               {/* Technical Start */}
 
               <TabPanel value={value} index={1}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {technical.map((item, i) => {
                     let color = "#089D57";
                     const {
@@ -281,7 +281,7 @@ function Team() {
               {/* Secretariat Start */}
 
               <TabPanel value={value} index={2}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {secretariat.map((item, i) => {
                     let color = "#2376E5";
                     const {
@@ -332,7 +332,7 @@ function Team() {
               {/* Logistics Start */}
 
               <TabPanel value={value} index={3}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {logistics.map((item, i) => {
                     let color = "#F6BA17";
                     const {
@@ -383,7 +383,7 @@ function Team() {
               {/* Event Start */}
 
               <TabPanel value={value} index={4}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {eventsCoordinator.map((item, i) => {
                     let color = "#E84435";
                     const {
@@ -434,7 +434,7 @@ function Team() {
               {/* Marketing Start */}
 
               <TabPanel value={value} index={5}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {marketing.map((item, i) => {
                     let color = "#089D57";
                     const {
@@ -485,7 +485,7 @@ function Team() {
               {/* Press Start */}
 
               <TabPanel value={value} index={6}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {press.map((item, i) => {
                     let color = "#2376E5";
                     const {
@@ -536,7 +536,7 @@ function Team() {
               {/* Outreach Start */}
 
               <TabPanel value={value} index={7}>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-16'>
+                <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
                   {outreach.map((item, i) => {
                     let color = "#F6BA17";
                     const {
