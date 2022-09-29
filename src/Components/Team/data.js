@@ -105,11 +105,11 @@ export const technical = [
   {
     name: 'Sanskar Mishra',
     post: 'Technical Member',
-    imageurl: 'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/SanskarMishra_Technical Member.jpg',
+    imageurl: 'https://raw.githubusercontent.com/whythoSanskar/Assets/main/image/ay22_23/team/SanskarMishra_Technical%20Member.jpg',
     githuburl: 'https://github.com/whythoSanskar',
     linkedinurl: 'https://www.linkedin.com/in/sanskar-mishra0',
     twitterUrl: 'https://twitter.com/whythoSanskar?t=8JVtfMLXTYIwXox1IBW1Jw&s=09',
-    quote: `“Common sense is like deodorant. The people who need it most never use it.”
+    quote: `“Another day, another opportunity to learn something new.” 
     —Anonymous`,
   },
   {
