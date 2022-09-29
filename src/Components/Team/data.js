@@ -19,7 +19,7 @@ export const Lead = [
     githuburl: "https://github.com/Hrishikesh332",
     linkedinurl: "https://www.linkedin.com/in/hrishikesh-yadav-aa748121a",
     twitterUrl: "https://twitter.com/Hrishik55709731",
-    quote: "lazy",
+    quote: ` "Machine Learning provides us with the vision to think beyond imagination and also the power to bring it into reality. Never stop thinking and building to help others."`,
   },
   {
     name: "Dhiraj Chauhan",
@@ -52,7 +52,7 @@ export const marketing = [
     githuburl: "https://github.com/saachibangera",
     linkedinurl: "https://github.com/saachibangera",
     twitterUrl: "https://twitter.com/Saachi_bangera",
-    quote: "lazy",
+    quote: "Hello",
   },
 
   {
