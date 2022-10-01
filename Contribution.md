@@ -5,6 +5,22 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## What to do?
+- First fork this repository, so that a copy of this repository is added to your repository, due to which the changes you make to 
+the project won't affect the original repository.
+- Next you have to open clone the website using [GIT](#git-guide) or [VS-Code](#vsc-guide)
+
+## GIT guide
+- Install [Git](https://gitforwindows.org/)
+- Then you have to open git bash at that location where you will work on the project.
+- Run command 
+
+## VSC guide
+- To Use Git in Vsc you have to open the command pallet ```(Ctrl+Shift+P)```
+- Then you run the command ``Git clone`` after that you have to give link to your repository that you have forked.
+- To find where is the link just go to your forked repositry and then you will see ```Code``` button just toggle that and you'll get https link and ssh link to your reposiory. Copy the HTTP link address.
+- 
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
