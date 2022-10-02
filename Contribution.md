@@ -58,4 +58,4 @@ Happy End
 ---------
 
 1. As soon as the reviewer is fine with the pull request, the maintainers will merge your pull request.
-2. The last, but not least. 
+2. The last, but not least, Happy Coding :D
