@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import Anam from "./Team-images/ay22_23/AnamAnsari_Chairperson.jpeg";
 import Dhiraj from "./Team-images/ay22_23/DhirajChauhan_Advisory.jpeg";
 import Himanshu from "./Team-images/ay22_23/HimanshuAgarwal_Secretariat.jpeg";
@@ -17,7 +18,7 @@ import Shweta from "./Team-images/ay22_23/ShwetaBhat_Secretariat.jpeg";
 import Vansh from "./Team-images/ay22_23/VanshBaghel_Technical Member.jpeg";
 import Vanshika from "./Team-images/ay22_23/VanshikaPatel_Event Co-ordinator.jpeg";
 import Wilfred from "./Team-images/ay22_23/WilfredAlmeida_Joint Technical Head.jpeg";
-/* eslint-disable quotes */
+
 export const Lead = [
   {
     name: "Anam Ansari",
