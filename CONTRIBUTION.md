@@ -3,7 +3,7 @@
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. 
 
-Please note we have a [Code of Conduct](https://github.com/whythoSanskar/gdsc-tcet-website/blob/whythoSanskar-patch-2/Code%20of%20Conduct.md), please follow it in all your interactions with the project.
+Please note we have a [Code of Conduct](CODE_OF_CONDUCT.md) please follow it in all your interactions with the project.
 
 # Hacktoberfest Contributions
 > We are delightful to hear that you're participating in hacktoberfest. 
@@ -27,7 +27,7 @@ the project won't affect the original repository.
 8. Don't forget to sync your forked repo!!!
 
 ## Running the project.
-* In order to run the project, please look into [Read.me](https://github.com/DSC-TCET/gdsc-tcet-website/blob/master/README.md) file.
+* In order to run the project, please look into [Read.me](README.md) file.
 
 ## GIT guide
 - Install [Git](https://gitforwindows.org/)
