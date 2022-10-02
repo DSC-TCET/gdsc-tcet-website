@@ -34,6 +34,7 @@ the project won't affect the original repository.
 
 ## Pull Request Process
 
-1. While making a Pull Request you have to request for review.
-
+1. Add the relevant information what you have changed give a relevent heading for the PR too.
+2. While making a Pull Request you have to request for review.
+3. Wait till your Pull Request is reviewed by maintaiers.
 
