@@ -3,7 +3,7 @@
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. 
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+Please note we have a [Code of Conduct](https://github.com/whythoSanskar/gdsc-tcet-website/blob/whythoSanskar-patch-2/Code%20of%20Conduct.md), please follow it in all your interactions with the project.
 
 ## Steps to Contribute.
 1. Find an issue
