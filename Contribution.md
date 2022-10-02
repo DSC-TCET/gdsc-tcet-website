@@ -5,101 +5,35 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-## What to do?
-- First fork this repository, so that a copy of this repository is added to your repository, due to which the changes you make to 
-the project won't affect the original repository.
-- Next you have to open clone the website using [GIT](#git-guide) or [VS-Code](#vsc-guide)
+## Steps to Contribute.
+1. Find an issue
+   >**Note**
+   >If you find an issue you can request to assign it or you can create a new issue and request assignment.
+2. First fork this repository, so that a copy of this repository is added to your repository, due to which the changes you make to 
+the project won't affect the original repository. 
+3. Next you have to open clone the website using [GIT](#git-guide) or [VS-Code](#vsc-guide)
+4. Work on the issue that is assigned to you.
+5. Make changes and then do a pull request.
+6. Update the fork with sync'
+7. Merge your branch into our master branch.
 
 ## GIT guide
 - Install [Git](https://gitforwindows.org/)
 - Then you have to open git bash at that location where you will work on the project.
-- Run command 
+- You can follow the [Tutorial](https://youtu.be/apGV9Kg7ics) for more on git.
 
 ## VSC guide
 - To Use Git in Vsc you have to open the command pallet ```(Ctrl+Shift+P)```
 - Then you run the command ``Git clone`` after that you have to give link to your repository that you have forked.
-- To find where is the link just go to your forked repositry and then you will see ```Code``` button just toggle that and you'll get https link and ssh link to your reposiory. Copy the HTTP link address.
-- 
+- To find where is the link just go to your forked repositry and then you will see ```Code``` button above the list of files just toggle that and you'll get https link and ssh link to your reposiory. Copy the HTTP link address.
+- Paste that link into VSCode and run that command, a clone of all the files will get created in your local file where you have given the location.
+- Create a new branch using ```git checkout -b <branchname>```. 
+- Work on the issue and then you might see git icon on the left where there are extensions and other resources. Click that icon 
+- Then after completion you have to stage the changes. To stage the changes you will se ```+``` beside each file you can individually add the ```unstaged files``` to the ```staging area```. To add multiple files ```stage all files``` and then the will go in staging area. 
+- Next you have to commit the files in order to do so write a commit message like ```Updated the Readme.md file``` (Note:- This message should reflect what you did like addition, updation or deletion of file. This message should be sensible). Commit the files and then follow [Pull request process](#pull-request-process)
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+1. While making a Pull Request you have to request for review.
 
-## Code of Conduct
 
-### Our Pledge
-
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
-
-### Our Standards
-
-Examples of behavior that contributes to creating a positive environment
-include:
-
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
-
-Examples of unacceptable behavior by participants include:
-
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
-
-### Our Responsibilities
-
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
-
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
-
-### Scope
-
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
-
-### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
-
-### Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
