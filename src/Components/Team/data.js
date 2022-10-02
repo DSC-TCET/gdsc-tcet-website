@@ -134,7 +134,7 @@ export const technical = [
     linkedinurl: "https://www.linkedin.com/in/sanskar-mishra0",
     twitterUrl:
       "https://twitter.com/whythoSanskar?t=8JVtfMLXTYIwXox1IBW1Jw&s=09",
-    quote: `“Common sense is like deodorant. The people who need it most never use it.”
+    quote: `“Another day, another opportunity to learn something new.”
     —Anonymous`,
   },
   {
