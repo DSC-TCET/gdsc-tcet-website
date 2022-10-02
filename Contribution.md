@@ -17,6 +17,9 @@ the project won't affect the original repository.
 6. Update the fork with sync'
 7. Merge your branch into our master branch.
 
+## Running the project.
+* In order to run the project, please look into [Read.me](https://github.com/DSC-TCET/gdsc-tcet-website/blob/master/README.md) file.
+
 ## GIT guide
 - Install [Git](https://gitforwindows.org/)
 - Then you have to open git bash at that location where you will work on the project.
@@ -37,3 +40,22 @@ the project won't affect the original repository.
 1. Add the relevant information what you have changed give a relevent heading for the PR too.
 2. While making a Pull Request you have to request for review.
 3. Wait till your Pull Request is reviewed by maintaiers.
+
+Making a good pull request
+--------------------------
+
+Following these guidelines will increase the likelihood of your pull request being accepted:
+
+1.  Before pushing your PR to the repository, make sure that it builds perfectly fine on your local system.
+2.  Add enough information, like a meaningful title, the reason why you made the commit and a link to the issue page if you opened one for this PR.
+3.  Scope your PR to one issue. Before submitting, make sure the diff contains no unrelated changes. If you want to cover more than one issue, submit your changes for each as separate pull requests.
+4.  If you have added new functionality, you should update/create the relevant documentation.
+5.  Try not to include "oops" commits - ones that just fix an error in the previous commit. If you have those, then before submitting [squash](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Squashing-Commits) those fixes directly into the commits where they belong.
+6.  Make sure to choose the right base branch and to follow the [[Coding_Style_Guide]] for your code.
+7.  Please do not add extra images or videos, if some of existing media files are suitable.
+
+Happy End
+---------
+
+1. As soon as the reviewer is fine with the pull request, the maintainers will merge your pull request.
+2. The last, but not least. 
