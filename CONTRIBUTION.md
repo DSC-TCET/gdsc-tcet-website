@@ -5,6 +5,14 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a [Code of Conduct](https://github.com/whythoSanskar/gdsc-tcet-website/blob/whythoSanskar-patch-2/Code%20of%20Conduct.md), please follow it in all your interactions with the project.
 
+# Hacktoberfest Contributions
+> We are delightful to hear that you're participating in hacktoberfest. 
+> Contributions to this project will also be helpful in your journey of hacktoberfest.
+> If you want to contribute to this project on the backdrop of Hacktoberfest, You're Welcome
+* You can [Open an issue](#opening-an-issue) here.
+* Follow the [steps to contribute](#steps-to-contribute)
+* Make a [pull request](#opening-a-pull-request) and wait for it to be reviewed by maintainers.
+
 ## Steps to Contribute.
 1. Find an issue
    >**Note**
@@ -16,6 +24,7 @@ the project won't affect the original repository.
 5. Make changes and then do a pull request.
 6. Update the fork with sync'
 7. Merge your branch into our master branch.
+8. Don't forget to sync your forked repo!!!
 
 ## Running the project.
 * In order to run the project, please look into [Read.me](https://github.com/DSC-TCET/gdsc-tcet-website/blob/master/README.md) file.
@@ -33,13 +42,26 @@ the project won't affect the original repository.
 - Create a new branch using ```git checkout -b <branchname>```. 
 - Work on the issue and then you might see git icon on the left where there are extensions and other resources. Click that icon 
 - Then after completion you have to stage the changes. To stage the changes you will se ```+``` beside each file you can individually add the ```unstaged files``` to the ```staging area```. To add multiple files ```stage all files``` and then the will go in staging area. 
-- Next you have to commit the files in order to do so write a commit message like ```Updated the Readme.md file``` (Note:- This message should reflect what you did like addition, updation or deletion of file. This message should be sensible). Commit the files and then follow [Pull request process](#pull-request-process)
+- Next you have to commit the files in order to do so write a commit message like ```Updated the Readme.md file``` (Note:- This message should reflect what you did like addition, updation or deletion of file. This message should be sensible). Commit the files and then follow [Pull request process](#opening-a-pull-request)
 
-## Pull Request Process
 
-1. Add the relevant information what you have changed give a relevent heading for the PR too.
-2. While making a Pull Request you have to request for review.
-3. Wait till your Pull Request is reviewed by maintaiers.
+## Opening an Issue
+>Before opening an issue, please be sure that your issue hasn't already been asked by using [GitHub search](https://help.github.com/articles/searching-issues/)
+Here are a few things that will help us, to help resolve your issues:
+- A descriptive title that gives an idea of what your issue refers to
+- A thorough description of the issue, (one word descriptions are very hard to understand)
+- Screenshots (if appropriate)
+- Links (if appropriate)
+
+
+## Opening a Pull Request
+
+0. Clone the repository
+0. Configure and install the dependencies: (See the [README](README.md) for more details)
+0. Create a new branch: `git checkout -b my-branch-name`
+0. Make your change, add tests, and make sure the tests still pass
+0. Push to your branch and [submit a pull request][pr]
+0. Wait for your pull request to be reviewed and merged!
 
 Making a good pull request
 --------------------------
