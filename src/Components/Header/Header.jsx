@@ -12,7 +12,7 @@ function Header() {
   const [shownav, setShownav] = useState(true);
   const [isDark, { toggle }] = useDarkreader(false);
   return (
-    <nav className='shadow-md sticky top-0 z-20'>
+    <nav className='shadow-md sticky top-0 z-20 bg-white'>
       <Container
         maxWidth='lg'
         className={`flex justify-between items-center bg-white py-2.5 md:px-4 px-0 border-b-2  ${
