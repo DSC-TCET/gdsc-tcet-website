@@ -62,7 +62,7 @@ function Eventgallery() {
                   <div
                     style={{
                       height: "450px",
-                      backgroundColor: "rgba(0,0,0,0.1)",
+                      backgroundColor: "rgba(0,0,0,0.05)",
                       boxSizing: "content-box",
                     }}
                     className='relative py-5 flex items-center justify-center rounded-lg'
