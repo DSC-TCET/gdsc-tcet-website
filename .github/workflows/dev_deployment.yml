@@ -3,7 +3,7 @@ on:
     branches: dev
 env:
   CI: false
-name: 🚀 Deploy website on push
+name: 🚀 Deploy dev branch on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
