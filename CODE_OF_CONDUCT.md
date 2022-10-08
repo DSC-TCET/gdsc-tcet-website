@@ -99,3 +99,4 @@ Please adhere to this project's `code of conduct`.
 
 > **Warning**
 > Refrain from sending us spammy pull requests we will outright reject them and you will be blacklisted and disqualified from further contributing to the hacktoberfest.
+ 
