@@ -1,10 +1,29 @@
 /* eslint-disable quotes */
+import Anam from "./Team-images/ay22_23/AnamAnsari_Chairperson.jpeg";
+import Dhiraj from "./Team-images/ay22_23/DhirajChauhan_Advisory.jpeg";
+import Himanshu from "./Team-images/ay22_23/HimanshuAgarwal_Secretariat.jpeg";
+import Hrishikesh from "./Team-images/ay22_23/HrishikeshYadav_Vice Chairperson.jpeg";
+import Janhvi from "./Team-images/ay22_23/JanhviJaiswal_Marketing Lead.jpeg";
+import Kaushal from "./Team-images/ay22_23/KaushalAgarwal_Event Member.jpeg";
+import Maitri from "./Team-images/ay22_23/MaitriVaghasiya_Logistics Head.jpeg";
+import Manas from "./Team-images/ay22_23/ManasrajSingh_Event Member.jpeg";
+import Naresh from "./Team-images/ay22_23/NareshGusain_Press Lead.jpeg";
+import Prashant from "./Team-images/ay22_23/PrashantSingh_Marketing Member.jpeg";
+import Prathik from "./Team-images/ay22_23/PrathikShetty_Technical Head.jpeg";
+import Saachi from "./Team-images/ay22_23/SaachiBangera_Marketing Member.jpeg";
+import Sakshi from "./Team-images/ay22_23/SakshiPorwal_Outreach Head.jpeg";
+import Sanskar from "./Team-images/ay22_23/SanskarMishra_Technical Member.jpeg";
+import Shoaib from "./Team-images/ay22_23/ShoaibShaikh_Technical Member.jpeg";
+import Shweta from "./Team-images/ay22_23/ShwetaBhat_Secretariat.jpeg";
+import Vansh from "./Team-images/ay22_23/VanshBaghel_Technical Member.jpeg";
+import Vanshika from "./Team-images/ay22_23/VanshikaPatel_Event Co-ordinator.jpeg";
+import Wilfred from "./Team-images/ay22_23/WilfredAlmeida_Joint Technical Head.jpeg";
+
 export const Lead = [
   {
     name: "Anam Ansari",
     post: "GDSC Lead",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/AnamAnsari_Chairperson.jpg",
+    imageurl: Anam,
     githuburl: "https://github.com/anamansari062",
     linkedinurl: "https://www.linkedin.com/in/anamansari062/",
     twitterUrl: "https://twitter.com/anamansari062",
@@ -14,18 +33,16 @@ export const Lead = [
   {
     name: "Hrishikesh Yadav",
     post: "GDSC Vice-Chairperson",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/HrishikeshYadav_Vice Chairperson.jpg",
+    imageurl: Hrishikesh,
     githuburl: "https://github.com/Hrishikesh332",
     linkedinurl: "https://www.linkedin.com/in/hrishikesh-yadav-aa748121a",
     twitterUrl: "https://twitter.com/Hrishik55709731",
-    quote: "lazy",
+    quote: ` "Machine Learning provides us with the vision to think beyond imagination and also the power to bring it into reality. Never stop thinking and building to help others."`,
   },
   {
     name: "Dhiraj Chauhan",
     post: "Advisory",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/DhirajChauhan_Advisory.webp",
+    imageurl: Dhiraj,
     githuburl: "https://github.com/cdhiraj40",
     linkedinurl: "https://www.linkedin.com/in/cdhiraj40/",
     twitterUrl: "https://www.twitter.com/cdhiraj40/",
@@ -36,8 +53,7 @@ export const marketing = [
   {
     name: "Janhvi Jaiswal",
     post: "Marketing Lead",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/JanhviJaiswal_Marketing Lead.jpg",
+    imageurl: Janhvi,
     githuburl: "https://github.com/shudhanshusingh",
     linkedinurl: "https://www.linkedin.com/in/shudhanshusingh",
     twitterUrl: "http://twitter.com",
@@ -47,19 +63,17 @@ export const marketing = [
   {
     name: "Bangera Saachi Dayanand ",
     post: "Marketing Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/SaachiBangera_Marketing Member.jpg",
+    imageurl: Saachi,
     githuburl: "https://github.com/saachibangera",
     linkedinurl: "https://github.com/saachibangera",
     twitterUrl: "https://twitter.com/Saachi_bangera",
-    quote: "lazy",
+    quote: "Hello",
   },
 
   {
     name: "Prashant Singh",
     post: "Marketing Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/PrashantSingh_Marketing Member.jpg",
+    imageurl: Prashant,
     githuburl: "https://github.com/Nikhil170404",
     linkedinurl: "https://www.linkedin.com/in/prashant-d-singh",
     twitterUrl:
@@ -73,8 +87,7 @@ export const secretariat = [
   {
     name: "Himanshu Agarwal",
     post: "Secretariat",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/HimanshuAgarwal_Secretariat.jpg",
+    imageurl: Himanshu,
     githuburl: "https://github.com/himanshu-03",
     linkedinurl: "https://www.linkedin.com/in/agarwal-himanshu",
     twitterUrl: "https://twitter.com/_a_himanshu?t=r3p1hva-fg25u30WE4x4Sg&s=09",
@@ -83,8 +96,7 @@ export const secretariat = [
   {
     name: "Shweta Ajit Bhat ",
     post: "Secretariat",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/ShwetaBhat_Secretariat.jpg",
+    imageurl: Shweta,
     githuburl: "https://github.com/ShwetaBhat",
     linkedinurl: "https://www.linkedin.com/in/shweta-bhat-4b9801214",
     twitterUrl: "https://twitter.com/shweta09_?t=j3EHO-ELwR3ksLidn7llXw&s=09",
@@ -97,8 +109,7 @@ export const technical = [
   {
     name: "Prathik Shetty ",
     post: "Technical Head",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/PrathikShetty_Technical Head.jpg",
+    imageurl: Prathik,
     githuburl: "https://www.github.com/prathikshetty2002",
     linkedinurl: "https://www.linkedin.com/in/prathik-shetty15",
     twitterUrl: "https://twitter.com/I_am_prathik",
@@ -107,8 +118,7 @@ export const technical = [
   {
     name: "Wilfred Almeida",
     post: "Joint Technical Head",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/WilfredAlmeida_Joint Technical Head.jpg",
+    imageurl: Wilfred,
     githuburl: "https://github.com/WilfredAlmeida",
     linkedinurl: "https://www.linkedin.com/in/wilfred-almeida",
     twitterUrl: "https://twitter.com/WilfredAlmeida_",
@@ -118,8 +128,7 @@ export const technical = [
   {
     name: "Shoaib Shaikh",
     post: "Technical Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/ShoaibShaikh_Technical Member.jpg",
+    imageurl: Shoaib,
     githuburl: "https://github.com/sho-shoaib",
     linkedinurl: "https://www.linkedin.com/in/shoaib-shaikh-658a62232",
     twitterUrl: "https://mobile.twitter.com/ShakeShow99",
@@ -128,20 +137,18 @@ export const technical = [
   {
     name: "Sanskar Mishra",
     post: "Technical Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/SanskarMishra_Technical Member.jpg",
+    imageurl: Sanskar,
     githuburl: "https://github.com/whythoSanskar",
     linkedinurl: "https://www.linkedin.com/in/sanskar-mishra0",
     twitterUrl:
       "https://twitter.com/whythoSanskar?t=8JVtfMLXTYIwXox1IBW1Jw&s=09",
-    quote: `“Common sense is like deodorant. The people who need it most never use it.”
+    quote: `“Another day, another opportunity to learn something new.”
     —Anonymous`,
   },
   {
     name: "Vansh Baghel",
     post: "Technical Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/VanshBaghel_Technical Member.jpg",
+    imageurl: Vansh,
     githuburl: "https://github.com/Vansh-Baghel",
     linkedinurl: "https://www.linkedin.com/in/vansh-baghel-24ab42232",
     twitterUrl: "https://mobile.twitter.com/VanshBaghel07",
@@ -153,8 +160,7 @@ export const outreach = [
   {
     name: "Sakshi Porwal",
     post: "Outreach Head",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/SakshiPorwal_Outreach Head.jpg",
+    imageurl: Sakshi,
     githuburl: "https://github.com/SakshiPorwal",
     linkedinurl: "https://www.linkedin.com/in/sakshi-porwal-786159214",
     twitterUrl: "https://twitter.com/SakshiP566?t=dlWmRQ33maBl5bPAF42Fsw&s=09",
@@ -165,8 +171,7 @@ export const logistics = [
   {
     name: "Maitri Vaghasiya",
     post: "Logistics Head",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/MaitriVaghasiya_Logistics Head.jpg",
+    imageurl: Maitri,
     githuburl: "https://github.com/root-Manas",
     linkedinurl: "https://www.linkedin.com/in/maitrivaghasiya/",
     twitterUrl: "https://twitter.com/reyhnaah",
@@ -178,8 +183,7 @@ export const press = [
   {
     name: "Naresh Gusain",
     post: "Press Lead",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/NareshGusain_Press Lead.jpg",
+    imageurl: Naresh,
     githuburl: "https://github.com/NareshGusain00",
     linkedinurl: "https://www.linkedin.com/in/naresh-gusain-1704b71aa",
     twitterUrl:
@@ -191,8 +195,7 @@ export const eventsCoordinator = [
   {
     name: "Vanshika Patel",
     post: "Event Co-ordinator",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/VanshikaPatel_Event Co-ordinator.jpg",
+    imageurl: Vanshika,
     githuburl: "https://github.com/patelvanshika01",
     linkedinurl: "https://www.linkedin.com/in/vanshika-patel-6a89691a6",
     twitterUrl: "https://www.linkedin.com/in/vanshika-patel-6a89691a6",
@@ -201,8 +204,7 @@ export const eventsCoordinator = [
   {
     name: "Kaushal Agarwal",
     post: "Event Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/KaushalAgarwal_Event Member.jpg",
+    imageurl: Kaushal,
     githuburl: "https://www.linkedin.com/in/kaushal-agarwal-436036238",
     linkedinurl: "https://www.linkedin.com/in/kaushal-agarwal-436036238",
     twitterUrl: "http://willupdate.com",
@@ -211,8 +213,7 @@ export const eventsCoordinator = [
   {
     name: "Manasraj Singh ",
     post: "Event Member",
-    imageurl:
-      "https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/ay22_23/team/ManasrajSingh_Event Member.jpg",
+    imageurl: Manas,
     githuburl: "https://github.com/root-Manas",
     linkedinurl: "https://www.linkedin.com/in/manasraj-singh",
     twitterUrl: "https://twitter.com/whoremembers__",
