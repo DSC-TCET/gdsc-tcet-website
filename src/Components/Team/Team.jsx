@@ -4,16 +4,6 @@
 /* eslint-disable */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardHeader,
-  MDBCardFooter,
-  MDBCardImage,
-  MDBRipple,
-} from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";

@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import useWindowDimensions from "../../getWindowDimensions";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -32,6 +33,8 @@ function Eventgallery() {
   };
 
   const navigate = useNavigate();
+
+  const { width } = useWindowDimensions();
 
   return (
     <div
@@ -56,26 +59,42 @@ function Eventgallery() {
             navigation
           >
             {EventList.map((item) => {
-              const { id, imageurl, title } = item;
+              const { id, imageurl, title, description } = item;
+
               return (
                 <SwiperSlide key={id}>
                   <div
                     style={{
-                      height: "450px",
+                      height: width > 1024 ? "450px" : "",
                       backgroundColor: "rgba(0,0,0,0.05)",
                       boxSizing: "content-box",
                     }}
-                    className='relative py-5 flex items-center justify-center rounded-lg'
+                    className={`relative ${
+                      width > 1024 ? "p-20" : "p-5"
+                    } flex items-center justify-center rounded-xl`}
                   >
                     <div
-                      className='h-full rounded-xl overflow-hidden inline-block shadow-lg cursor-pointer active:scale-95 transition'
+                      className='lg:grid flex flex-col grid-cols-2 bg-white rounded-lg cursor-pointer shadow-md'
                       onClick={() => navigate(`/events/${id}`)}
                     >
-                      <img
-                        src={imageurl}
-                        alt={title}
-                        className='h-full object-contain object-center'
-                      />
+                      <div className='h-96 w-full lg:rounded-l-xl xs:rounded-t-xl overflow-hidden'>
+                        <img
+                          src={imageurl}
+                          alt={title}
+                          className='h-full w-full object-cover'
+                        />
+                      </div>
+                      <div
+                        className={`${width > 765 && "p-5"} border-l-2`}
+                        style={{ padding: 30 }}
+                      >
+                        <h1 className='text-neutral-800 mb-5 lg:text-4xl md:text-3xl'>
+                          {title}
+                        </h1>
+                        <p className='text-lg xl:line-clamp-6 line-clamp-2'>
+                          {description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>

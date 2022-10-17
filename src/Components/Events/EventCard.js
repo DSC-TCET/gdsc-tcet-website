@@ -13,9 +13,8 @@ const EventCard = ({ title, desc, navto, img, id }) => {
 
   return (
     <Card
-      sx={{ maxWidth: 345 }}
-      className={`xl:col-span-3 md:col-span-3 col-span-6`}
       sx={{ width: "100%" }}
+      className={`lg:col-span-2 sm:col-span-3 col-span-6`}
       onClick={() => navigate(`/events/${id}`)}
     >
       <CardActionArea>

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React from "react";
+import React, { useEffect } from "react";
 import Aboutus from "./Aboutus";
 import Abouttcet from "./Abouttcet";
 import UpcomingEvent from "./UpcomingEvent";
@@ -9,8 +9,13 @@ import Stats from "./Stats";
 import Sponsor from "./Sponsor";
 import "./home.css";
 import Eventgallery from "../Events/Eventgallery";
+import ScrollToTop from "react-scroll-to-top";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       <Eventgallery />
@@ -25,6 +30,7 @@ function Home() {
         <Sponsor />
       </div>
       <Discord />
+      <ScrollToTop />
     </div>
   );
 }

@@ -84,12 +84,14 @@ const EventPage = () => {
         <p className='text-xl font-normal text-stone-800'>
           {found.description}
         </p>
-        <ul className='list-disc'>
-          <li>{found.agenda1}</li>
-          <li>{found.agenda2}</li>
-          <li>{found.agenda3}</li>
-          <li>{found.agenda4}</li>
-        </ul>
+        {found.agenda1 && (
+          <ul className='list-disc'>
+            <li>{found.agenda1}</li>
+            <li>{found.agenda2}</li>
+            <li>{found.agenda3}</li>
+            <li>{found.agenda4}</li>
+          </ul>
+        )}
       </div>
     </Container>
   );

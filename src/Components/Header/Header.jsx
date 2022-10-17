@@ -9,7 +9,7 @@ import { Container } from "@mui/system";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
-  const [shownav, setShownav] = useState(true);
+  const [shownav, setShownav] = useState(false);
   const [isDark, { toggle }] = useDarkreader(false);
   return (
     <nav className='shadow-md sticky top-0 z-20 bg-white'>
