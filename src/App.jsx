@@ -8,8 +8,9 @@ import Aos from "aos";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
-import Eventgallery from "./Components/Events/Eventgallery";
 import Team from "./Components/Team/Team";
+import EventMain from "./Components/Events/EventMain";
+import EventPage from "./Components/Events/EventPage";
 
 function App() {
   useEffect(() => {
@@ -28,8 +29,9 @@ function App() {
       />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='events' element={<Eventgallery />} />
+        <Route path='events' element={<EventMain />} />
         <Route path='team' element={<Team />} />
+        <Route path='/events/:id' element={<EventPage />} />
       </Routes>
       <Footer />
     </>

@@ -4,16 +4,6 @@
 /* eslint-disable */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardHeader,
-  MDBCardFooter,
-  MDBCardImage,
-  MDBRipple,
-} from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
@@ -123,24 +113,28 @@ function Team() {
   return (
     <div style={{ background: "#fafafa" }}>
       <Container style={{ paddingTop: "3vh" }}>
-        <Row style={{ paddingBottom: "5vh" }}>
+        <div
+          style={{ paddingBottom: "5vh" }}
+          className='flex flex-col gap-5 pt-5'
+        >
           <motion.div
-            initial={{ x: -1000 }}
-            animate={{ x: 0 }}
+            initial={{ y: 15, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{
-              type: "spring",
+              type: "easeIn",
               stiffness: 100,
-              delay: 0.5,
+              delay: 0.1,
               duration: 0.5,
             }}
           >
-            <h1 className={classes.teamtitle}>Meet the Team</h1>
+            <h1 className='text-center text-5xl font-bold text-black'>
+              Meet The Team
+            </h1>
           </motion.div>
-          <br />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0, duration: 1 }}
+            transition={{ delay: 0, duration: 0.5 }}
           >
             <Box sx={{ width: "100%" }}>
               <Box
@@ -268,7 +262,7 @@ function Team() {
               })}
             </Box>
           </motion.div>
-        </Row>
+        </div>
         <br />
 
         <br />
