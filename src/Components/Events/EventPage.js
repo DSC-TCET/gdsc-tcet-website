@@ -22,11 +22,11 @@ const EventPage = () => {
 
   return (
     <Container
-      maxWidth='md'
-      className='flex flex-col gap-5 items-start py-16 pb-32'
+      maxWidth="md"
+      className="flex flex-col gap-5 items-start py-16 pb-32"
     >
       <button
-        className='flex justify-center items-center gap-2 py-2 pr-4'
+        className="flex justify-center items-center gap-2 py-2 pr-4"
         onMouseOver={() => setBackHovered(true)}
         onMouseLeave={() => setBackHovered(false)}
         onClick={() => navigate(-1)}
@@ -44,7 +44,7 @@ const EventPage = () => {
           Back
         </span>
       </button>
-      <div className='flex flex-col gap-4 -mt-1'>
+      <div className="flex flex-col gap-4 -mt-1">
         <motion.div
           initial={{ y: 15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -55,13 +55,13 @@ const EventPage = () => {
             duration: 0.5,
           }}
         >
-          <h1 className='text-black md:text-6xl sm:text-5xl text-4xl font-normal'>
+          <h1 className="text-black md:text-6xl sm:text-5xl text-4xl font-normal">
             {found.title}
           </h1>
         </motion.div>
-        <span className='text-blue-500'>{found.date}</span>
+        <span className="text-blue-500">{found.date}</span>
       </div>
-      <div className='w-full flex items-center justify-center'>
+      <div className="w-full flex items-center justify-center">
         <motion.div
           initial={{ y: -15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -71,21 +71,32 @@ const EventPage = () => {
             delay: 0.4,
             duration: 0.5,
           }}
-          className='rounded-xl overflow-hidden'
+          className="rounded-xl overflow-hidden"
         >
           <img
             src={found.imageurl}
-            className='object-contain object-center'
+            className="object-contain object-center"
             alt={found.title}
           />
         </motion.div>
       </div>
+      {found.youtubeLink && (
+        <iframe
+          width="560"
+          height="315"
+          src={found.youtubeLink}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      )}
       <div>
-        <p className='text-xl font-normal text-stone-800'>
+        <p className="text-xl font-normal text-stone-800">
           {found.description}
         </p>
         {found.agenda1 && (
-          <ul className='list-disc'>
+          <ul className="list-disc">
             <li>{found.agenda1}</li>
             <li>{found.agenda2}</li>
             <li>{found.agenda3}</li>
