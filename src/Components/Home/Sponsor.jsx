@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Col } from 'react-bootstrap';
 import Typography from '@mui/material/Typography';
+import logo from '../Images/sponsor_logo.jpg';
 
 function Sponsor() {
   return (
@@ -22,7 +23,8 @@ function Sponsor() {
               alt="Give My Certificate"
               width="15%"
               height="auto"
-              src="https://github.com/DSC-TCET/Assets/blob/main/image/sponsors/GMC%20LogoS.png?raw=true"
+              style={{ margin: 'auto' }}
+              src={logo}
             />
             <h2 style={{ color: '#161b22' }}>(Our Certificate Partner)</h2>
             <br />
