@@ -45,7 +45,7 @@ function UpcomingEvent() {
               <CardActions>
                 <Button
                   rel="noreferrer"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdHOZHy1iTn1sH_zm3E4p8pdqvBh6UV82NYwJLLUwPybClZVg/viewform"
+                  href="https://lu.ma/ctrl-alt-explore"
                   target="_blank"
                   style={{
                     fontSize: '1em',
