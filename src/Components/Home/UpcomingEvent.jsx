@@ -18,7 +18,7 @@ function UpcomingEvent() {
         <h1 style={{ paddingTop: '5vw', textAlign: 'center' }}>Upcoming Event</h1>
         <br />
         <Row style={{ paddingBottom: '15vh' }}>
-          <Col style={{ paddingBottom: '5vh' }} md={12} sm={12} lg={6}>
+          <Col style={{ padding: '0 6rem' }} md={12} sm={12} lg={6}>
             <Card
               className={classes.Card}
             >
@@ -27,18 +27,19 @@ function UpcomingEvent() {
                 alt="green iguana"
                 height="140"
                 image={upeve}
+                style={{ backgroundImage: 'linear-gradient(to right, #6366f1, #a855f7)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h4" component="div">
-                  Android Study Jams
+                  Control + Alt + Explore
                 </Typography>
                 <Typography variant="body1" color="text.primary">
-                  29 November to 10 December
+                  17 May 2023
                 </Typography>
                 <br />
                 <Typography variant="body1" color="text.secondary">
-                  Discover and unleash the Android power with our 6 Week-long
-                  Learning + Hands-on development Bootcamp.
+                  A one-of-a-kind event that aims to provide attendees with valuable
+                  information about various tech opportunities & network with experts.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -62,12 +63,14 @@ function UpcomingEvent() {
           <br />
           <Col style={{ paddingBottom: '5vh' }} md={12} sm={12} lg={6}>
             <Typography variant="h5" color="text.secondary">
-              Participate in the upcoming competition to win goodies and get a
-              chance to receive mentorship from Google😍 and get their
-              guidance/help to improve your App
+              It is a one-of-a-kind event that aims to provide attendees with
+              valuable information about summer opportunities. This
+              event is designed to help students, professionals, and other interested
+              individuals learn about the various summer programs, internships, and
+              other opportunities that are available to them.
             </Typography>
             <br />
-            <Typography variant="h6" color="text.primary">
+            {/* <Typography variant="h6" color="text.primary">
               Learn:
             </Typography>
             <Typography variant="subtitle1">
@@ -79,7 +82,7 @@ function UpcomingEvent() {
                 <li>Work Manager</li>
                 <li>Connect to the Internet</li>
               </ul>
-            </Typography>
+            </Typography> */}
           </Col>
           <br />
         </Row>
