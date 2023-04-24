@@ -9,7 +9,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import upeve from '../Images/upcomingevent.jpeg';
-import classes from './UpcomingEvent.module.css';
 
 function UpcomingEvent() {
   return (
@@ -17,10 +16,10 @@ function UpcomingEvent() {
       <Container>
         <h1 style={{ paddingTop: '5vw', textAlign: 'center' }}>Upcoming Event</h1>
         <br />
-        <Row style={{ paddingBottom: '15vh' }}>
-          <Col style={{ padding: '0 6rem' }} md={12} sm={12} lg={6}>
+        <Row style={{ paddingBottom: '15vh' }} className="pb-[15vh] space-y-8">
+          <Col className="lg:!px-12 ">
             <Card
-              className={classes.Card}
+              className="hover:shadow-stone-700 cursor-pointer"
             >
               <CardMedia
                 component="img"
@@ -62,7 +61,7 @@ function UpcomingEvent() {
           </Col>
           <br />
           <Col style={{ paddingBottom: '5vh' }} md={12} sm={12} lg={6}>
-            <Typography variant="h5" color="text.secondary">
+            <Typography variant="h5" className="flex items-center h-[100%] " color="text.secondary">
               It is a one-of-a-kind event that aims to provide attendees with
               valuable information about summer opportunities. This
               event is designed to help students, professionals, and other interested
