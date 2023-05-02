@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useEffect } from "react";
+import React from "react";
 import Aboutus from "./Aboutus";
 import Abouttcet from "./Abouttcet";
 import UpcomingEvent from "./UpcomingEvent";
@@ -9,28 +9,29 @@ import Stats from "./Stats";
 import Sponsor from "./Sponsor";
 import "./home.css";
 import Eventgallery from "../Events/Eventgallery";
-import ScrollToTop from "react-scroll-to-top";
+import Landing from "../Landing/Landing";
 
 function Home() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
-
   return (
     <div>
-      <Eventgallery />
-      <div data-aos='fade-down'>
-        <Abouttcet />
+      <Landing />
+      <div style={{ backgroundColor: "#F3F6F7" }} className='-translate-y-10'>
+        <h1 className='text-center sm:text-5xl text-4xl text-black'>
+          Notable Events
+        </h1>
+        <Eventgallery />
+        <div data-aos='fade-down'>
+          <Abouttcet />
+        </div>
+        <Stats />
+        <div data-aos='zoom-in'>
+          <UpcomingEvent />
+        </div>
+        <div data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
+          <Sponsor />
+        </div>
+        <Discord />
       </div>
-      <Stats />
-      <div data-aos='zoom-in'>
-        <UpcomingEvent />
-      </div>
-      <div data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
-        <Sponsor />
-      </div>
-      <Discord />
-      <ScrollToTop />
     </div>
   );
 }
