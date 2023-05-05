@@ -26,8 +26,11 @@ function Home() {
           <Abouttcet />
         </div>
         <div data-aos='zoom-in'>
+          <div className="w-full h-full overflow-hidden">
           <EventImages />
-        </div>
+          </div>
+          </div>
+        
         <Stats />
         <div data-aos='zoom-in'>
           <UpcomingEvent />
