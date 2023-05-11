@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import tcet from "../Images/tcet.jpg";
+import tcet from "../Images/gdsc-event.jpeg";
 
 function Abouttcet() {
   return (
@@ -19,19 +19,18 @@ function Abouttcet() {
             />
           </Col>
           <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
-            <h1 id='aboutustitle'>About TCET</h1>
+            <h1 id='aboutustitle'>About GDSC</h1>
             <br />
             <p id='aboutustext'>
-              Thakur College of Engineering and Technology (TCET) is situated in
-              Kandivali, Mumbai. An autonomous institute established in 2001.
-              The institute trains students in engineering and technology at
-              certificate, diploma, degree, post-graduate and doctoral levels.
+            <p>GDSC TCET (Google Developer Student Clubs TCET) is a student community affiliated with Google that aims to foster collaboration, learning, and innovation among the students. GDSC TCET is part of the larger Google Developer Student Clubs program, which exists in universities and colleges around the world.<br></br></p>
+
+            <p>The primary goal of GDSC TCET is to provide a platform for students to develop their technical skills, explore new technologies, and gain practical experience in various fields of computer science and engineering. The club organizes workshops, coding competitions, hackathons, tech talks, and other events to facilitate knowledge sharing and skill-building.</p>
             </p>
             <div id='aboutusbutton'>
               <Button
                 target='_blank'
                 rel='noreferrer'
-                href='https://tcetmumbai.in/'
+                href='https://gdsc.community.dev/thakur-college-of-engineering-and-technology-mumbai/'
                 size='lg'
                 variant='info'
               >
