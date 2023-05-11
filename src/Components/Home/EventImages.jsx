@@ -14,12 +14,13 @@ function EventImages() {
     interval={5000}
     controls={false}
     indicators={false}
+    fade={true}
+    className="carousel"
     >
-      <Carousel.Item>
+      <Carousel.Item className="carousel-item">
         <img
+          className="img"
           src={image1}
-          width="60%"
-          height="auto"
           style={{ margin: 'auto' }}
           alt="First slide"
         />
@@ -31,8 +32,7 @@ function EventImages() {
       <Carousel.Item>
         <img
           src={image2}
-          width="60%"
-          height="auto"
+          className="img"
           style={{ margin: 'auto' }}
           alt="Second slide"
         />
@@ -44,9 +44,8 @@ function EventImages() {
       </Carousel.Item>
       <Carousel.Item>
         <img
+        className="img"
           src={image3}
-          width="60%"
-          height="auto"
           style={{ margin: 'auto' }}
           alt="Third slide"
         />
