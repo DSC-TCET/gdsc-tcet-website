@@ -2,12 +2,16 @@
 
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { useMediaQuery } from "react-responsive";
 import './Eventimages.css';
 import image1 from '../Images/img1.jpg';
 import image2 from '../Images/img2.jpg';
 import image3 from '../Images/img3.jpg';
+import image4 from '../Images/img4.jpg';
+import image5 from '../Images/img5.jpg';
 
 function EventImages() {
+  const isMobile = useMediaQuery({query: "(max-width: 650px)"});
   return (
     <Carousel
     autoPlay={true}
@@ -18,14 +22,20 @@ function EventImages() {
     className="carousel"
     >
       <Carousel.Item className="carousel-item">
+      <div class="col items-center justify-center">
         <img
           className="img"
           src={image1}
-          style={{ margin: 'auto' }}
+          style={{ 
+            margin: 'auto',
+            width: isMobile? "20rem": "36rem",
+            height: isMobile? "10rem": "20rem",
+          }}
           alt="First slide"
         />
+        </div>
         <Carousel.Caption>
-          <h3>Event 1</h3>
+          <h3>Postman Event</h3>
           
         </Carousel.Caption>
       </Carousel.Item>
@@ -33,7 +43,11 @@ function EventImages() {
         <img
           src={image2}
           className="img"
-          style={{ margin: 'auto' }}
+          style={{ 
+          margin: 'auto',
+          width: isMobile? "20rem": "36rem",
+          height: isMobile? "10rem": "20rem", 
+        }}
           alt="Second slide"
         />
 
@@ -43,19 +57,56 @@ function EventImages() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+      <div class="col items-center justify-center">
         <img
         className="img"
           src={image3}
-          style={{ margin: 'auto' }}
+          style={{ margin: 'auto',
+          width: isMobile? "20rem": "36rem",
+          height: isMobile? "10rem": "20rem", }}
           alt="Third slide"
         />
-
+      </div>
         <Carousel.Caption>
-          <h3>Event 3</h3>
+          <h3>Design Day</h3>
           
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+      <div class="col items-center justify-center">
+        <img
+        className="img"
+          src={image4}
+          style={{ margin: 'auto',
+          width: isMobile? "20rem": "36rem",
+          height: isMobile? "10rem": "20rem", }}
+          alt="Fourth slide"
+        />
+        </div>
+        <Carousel.Caption>
+          <h3>Flutter Event</h3>
+          
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div class="col items-center justify-center">
+        <img
+        className="img"
+          src={image5}
+          style={{ margin: 'auto',
+          width: isMobile? "20rem": "36rem",
+          height: isMobile? "10rem": "20rem", }}
+          alt="Fifth slide"
+        />
+        </div> 
+        <Carousel.Caption>
+          <h3>Tensorflow Event</h3>
+          
+        </Carousel.Caption>
+       
+      </Carousel.Item>
     </Carousel>
+    
   );
 }
 
