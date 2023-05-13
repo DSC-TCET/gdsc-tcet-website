@@ -10,6 +10,8 @@ import Sponsor from "./Sponsor";
 import "./home.css";
 import Eventgallery from "../Events/Eventgallery";
 import Landing from "../Landing/Landing";
+import EventImages from "./EventImages";
+
 
 function Home() {
   return (
@@ -23,6 +25,12 @@ function Home() {
         <div data-aos='fade-down'>
           <Abouttcet />
         </div>
+        <div data-aos='zoom-in'>
+          <div className="w-full h-full overflow-hidden">
+          <EventImages />
+          </div>
+          </div>
+        
         <Stats />
         <div data-aos='zoom-in'>
           <UpcomingEvent />
