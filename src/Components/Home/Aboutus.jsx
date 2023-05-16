@@ -2,10 +2,12 @@ import React from 'react';
 import {
   Container, Row, Col, Button,
 } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import hero from '../Images/hero.jpeg';
 
 function Aboutus() {
+  const isMobile = useMediaQuery({ query: '(max-width: 650px)' });
   return (
     <div>
       <Container>
@@ -15,7 +17,7 @@ function Aboutus() {
           transition={{ delay: 0, duration: 1 }}
         >
           <Row style={{ marginTop: '3vh', paddingBottom: '15vh' }}>
-            <Col md={12} sm={12} lg={6} style={{ marginTop: '5vw' }}>
+            <Col md={12} sm={6} lg={6} style={{ marginTop: '5vw' }}>
 
               <h1 id="aboutustitle">Hello Techies!</h1>
               <br />
@@ -43,7 +45,7 @@ function Aboutus() {
             </Col>
             <Col sm={12} md={12} lg={6}>
               <div style={{ textAlign: 'center' }}>
-                <img width="90%" height="auto" src={hero} alt="hero" />
+                <img height="auto" src={hero} alt="hero" style={{ width: isMobile ? '50%' : '90%' }} />
               </div>
             </Col>
           </Row>
