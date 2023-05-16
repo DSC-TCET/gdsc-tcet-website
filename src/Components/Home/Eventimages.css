@@ -1,0 +1,12 @@
+.carousel{
+    padding: 25px;
+}
+
+.carousel-item{
+    opacity:0;
+    transition: opacity 1s !important;
+  }
+  .carousel-item.active{
+    opacity:1;
+    transition: opacity 1s !important;
+  }
