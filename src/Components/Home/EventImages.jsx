@@ -15,7 +15,7 @@ function EventImages() {
   return (
     <Carousel
     autoPlay={true}
-    interval={5000}
+    interval={3000}
     controls={false}
     indicators={false}
     fade={true}
