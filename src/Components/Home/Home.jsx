@@ -32,9 +32,9 @@ function Home() {
           </div>
         
         <Stats />
-        <div data-aos='zoom-in'>
+        {/* <div data-aos='zoom-in'>
           <UpcomingEvent />
-        </div>
+        </div> */}
         <div data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
           <Sponsor />
         </div>

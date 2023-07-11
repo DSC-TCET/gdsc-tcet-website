@@ -24,7 +24,7 @@ function UpcomingEvent() {
               <CardMedia
                 component="img"
                 alt="green iguana"
-                height="140"
+                height="40"
                 image={upeve}
                 style={{ backgroundImage: 'linear-gradient(to right, #6366f1, #a855f7)' }}
               />

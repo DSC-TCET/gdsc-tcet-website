@@ -15,7 +15,7 @@ function EventImages() {
   return (
     <Carousel
     autoPlay={true}
-    interval={3000}
+    interval={2000}
     controls={false}
     fade={true}
     className="carousel"
@@ -27,8 +27,8 @@ function EventImages() {
           src={image1}
           style={{ 
             margin: 'auto',
-            width: isMobile? "20rem": "36rem",
-            height: isMobile? "10rem": "20rem",
+            width: isMobile? "20rem": "46rem",
+            height: isMobile? "10rem": "30rem",
           }}
           alt="First slide"
         />
@@ -44,8 +44,8 @@ function EventImages() {
           className="img"
           style={{ 
           margin: 'auto',
-          width: isMobile? "20rem": "36rem",
-          height: isMobile? "10rem": "20rem", 
+          width: isMobile? "20rem": "46rem",
+          height: isMobile? "10rem": "30rem", 
         }}
           alt="Second slide"
         />
@@ -61,8 +61,8 @@ function EventImages() {
         className="img"
           src={image3}
           style={{ margin: 'auto',
-          width: isMobile? "20rem": "36rem",
-          height: isMobile? "10rem": "20rem", }}
+          width: isMobile? "20rem": "46rem",
+          height: isMobile? "10rem": "30rem", }}
           alt="Third slide"
         />
       </div>
@@ -77,8 +77,8 @@ function EventImages() {
         className="img"
           src={image4}
           style={{ margin: 'auto',
-          width: isMobile? "20rem": "36rem",
-          height: isMobile? "10rem": "20rem", }}
+          width: isMobile? "20rem": "46rem",
+          height: isMobile? "10rem": "30rem", }}
           alt="Fourth slide"
         />
         </div>
@@ -93,8 +93,8 @@ function EventImages() {
         className="img"
           src={image5}
           style={{ margin: 'auto',
-          width: isMobile? "20rem": "36rem",
-          height: isMobile? "10rem": "20rem", }}
+          width: isMobile? "20rem": "46rem",
+          height: isMobile? "10rem": "30rem", }}
           alt="Fifth slide"
         />
         </div> 
