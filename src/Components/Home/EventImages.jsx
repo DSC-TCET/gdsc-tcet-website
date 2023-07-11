@@ -51,7 +51,7 @@ function EventImages() {
         />
 
         <Carousel.Caption>
-          <h3>Android Jetpack Compose Camp</h3>
+          <h3>Jetpack Compose Camp</h3>
           
         </Carousel.Caption>
       </Carousel.Item>
