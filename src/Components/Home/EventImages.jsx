@@ -15,14 +15,13 @@ function EventImages() {
   return (
     <Carousel
     autoPlay={true}
-    interval={5000}
+    interval={3000}
     controls={false}
-    indicators={false}
     fade={true}
     className="carousel"
     >
       <Carousel.Item className="carousel-item">
-      <div class="col items-center justify-center">
+      <div className="col items-center justify-center">
         <img
           className="img"
           src={image1}
@@ -57,7 +56,7 @@ function EventImages() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <div class="col items-center justify-center">
+      <div className="col items-center justify-center">
         <img
         className="img"
           src={image3}
@@ -73,7 +72,7 @@ function EventImages() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <div class="col items-center justify-center">
+      <div className="col items-center justify-center">
         <img
         className="img"
           src={image4}
@@ -89,7 +88,7 @@ function EventImages() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div class="col items-center justify-center">
+        <div className="col items-center justify-center">
         <img
         className="img"
           src={image5}
