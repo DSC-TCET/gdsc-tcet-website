@@ -57,7 +57,7 @@ function Header() {
         </div>
       </Container>
       <Container
-        className={`absolute top-0 -z-10 flex md:hidden bg-white border-t-2 px-6 py-4 shadow-md flex justify-center transition duration-400 bg-white -mt-1 ${
+        className={`absolute top-0 -z-10 flex md:hidden bg-white border-t-2 px-6 py-4 shadow-md justify-center transition duration-400 -mt-1 ${
           shownav ? "translate-y-full" : "translate-y-0"
         }`}
       >

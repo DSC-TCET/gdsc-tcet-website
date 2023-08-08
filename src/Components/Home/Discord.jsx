@@ -13,7 +13,7 @@ function Discord() {
           style={{
             display: 'block',
             margin: 'auto',
-            maxWidth: '80%',
+            maxWidth: '85%',
             paddingBottom: '5vw',
           }}
         >
