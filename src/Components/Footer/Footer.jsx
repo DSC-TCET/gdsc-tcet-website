@@ -13,7 +13,7 @@ export default function Footer() {
     >
       <MDBContainer className="p-4">
         <MDBRow>
-          <MDBCol lg="4" md="12" className="mb-4 ml-6 md:ml-0 mb-md-0">
+          <MDBCol lg="4" md="12" className="mb-4 ml-7 md:ml-0 mb-md-0">
             <a
               target="_blank"
               rel="noreferrer"
