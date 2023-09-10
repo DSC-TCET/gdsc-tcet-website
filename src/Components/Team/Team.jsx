@@ -47,10 +47,6 @@ const data = [
     color: "#089D57",
   },
   {
-    data: facilitator,
-    color: "#089D57",
-  },
-  {
     data: secretariat,
     color: "#F6BA17",
   },
@@ -73,6 +69,11 @@ const data = [
   {
     data: outreach,
     color: "#E84435",
+  },
+
+  {
+    data: facilitator,
+    color: "#089D57",
   },
 ];
 
@@ -169,16 +170,9 @@ function Team() {
                   />
 
                   <Tab
-                    icon={<CloudIcon />}
-                    label="Facilitator"
-                    {...a11yProps(2)}
-                    className={classes.tab}
-                  />
-
-                  <Tab
                     icon={<PsychologyIcon />}
                     label="Secretariat"
-                    {...a11yProps(3)}
+                    {...a11yProps(2)}
                     className={classes.tab}
                   />
 
@@ -186,33 +180,40 @@ function Team() {
                     icon={<PlaceIcon />}
                     label="Logistics"
                     className={classes.tab}
-                    {...a11yProps(4)}
+                    {...a11yProps(3)}
                   />
 
                   <Tab
                     icon={<EventIcon />}
                     label="Event"
-                    {...a11yProps(5)}
+                    {...a11yProps(4)}
                     className={classes.tab}
                   />
 
                   <Tab
                     icon={<AssignmentIcon />}
                     label="Marketing"
-                    {...a11yProps(6)}
+                    {...a11yProps(5)}
                     className={classes.tab}
                   />
 
                   <Tab
                     icon={<PaletteIcon />}
                     label="Press"
-                    {...a11yProps(7)}
+                    {...a11yProps(6)}
                     className={classes.tab}
                   />
 
                   <Tab
                     icon={<LanguageIcon />}
                     label="Outreach"
+                    {...a11yProps(7)}
+                    className={classes.tab}
+                  />
+
+                  <Tab
+                    icon={<CloudIcon />}
+                    label="Facilitator"
                     {...a11yProps(8)}
                     className={classes.tab}
                   />
