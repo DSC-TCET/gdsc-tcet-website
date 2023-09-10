@@ -19,11 +19,13 @@ import PlaceIcon from "@mui/icons-material/Place";
 import PaletteIcon from "@mui/icons-material/Palette";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import CodeIcon from "@mui/icons-material/Code";
+import PsychologyIcon from "@mui/icons-material/Psychology";
 import {
   Lead,
   marketing,
   secretariat,
   technical,
+  facilitator,
   outreach,
   logistics,
   press,
@@ -45,16 +47,20 @@ const data = [
     color: "#089D57",
   },
   {
-    data: secretariat,
-    color: "#2376E5",
+    data: facilitator,
+    color: "#089D57",
   },
   {
-    data: logistics,
+    data: secretariat,
     color: "#F6BA17",
   },
   {
-    data: eventsCoordinator,
+    data: logistics,
     color: "#E84435",
+  },
+  {
+    data: eventsCoordinator,
+    color: "#089D57",
   },
   {
     data: marketing,
@@ -62,11 +68,11 @@ const data = [
   },
   {
     data: press,
-    color: "#2376E5",
+    color: "#F6BA17",
   },
   {
     data: outreach,
-    color: "#F6BA17",
+    color: "#E84435",
   },
 ];
 
@@ -75,7 +81,7 @@ function TabPanel(props) {
 
   return (
     <div
-      role='tabpanel'
+      role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -115,7 +121,7 @@ function Team() {
       <Container style={{ paddingTop: "3vh" }}>
         <div
           style={{ paddingBottom: "5vh" }}
-          className='flex flex-col gap-5 pt-5'
+          className="flex flex-col gap-5 pt-5"
         >
           <motion.div
             initial={{ y: 15, opacity: 0 }}
@@ -127,7 +133,7 @@ function Team() {
               duration: 0.5,
             }}
           >
-            <h1 className='text-center text-5xl font-bold text-black'>
+            <h1 className="text-center text-5xl font-bold text-black">
               Meet The Team
             </h1>
           </motion.div>
@@ -144,63 +150,70 @@ function Team() {
                 <Tabs
                   value={value}
                   onChange={handleChange}
-                  variant='scrollable'
+                  variant="scrollable"
                   scrollButtons
                   allowScrollButtonsMobile
                 >
                   <Tab
                     icon={<PersonIcon />}
-                    label='Lead'
+                    label="Lead"
                     {...a11yProps(0)}
                     className={classes.tab}
                   />
 
                   <Tab
                     icon={<CodeIcon />}
-                    label='Technical'
+                    label="Technical"
                     {...a11yProps(1)}
                     className={classes.tab}
                   />
 
                   <Tab
                     icon={<CloudIcon />}
-                    label='Secretariat'
+                    label="Facilitator"
                     {...a11yProps(2)}
                     className={classes.tab}
                   />
 
                   <Tab
-                    icon={<PlaceIcon />}
-                    label='Logistics'
-                    className={classes.tab}
+                    icon={<PsychologyIcon />}
+                    label="Secretariat"
                     {...a11yProps(3)}
+                    className={classes.tab}
+                  />
+
+                  <Tab
+                    icon={<PlaceIcon />}
+                    label="Logistics"
+                    className={classes.tab}
+                    {...a11yProps(4)}
                   />
 
                   <Tab
                     icon={<EventIcon />}
-                    label='Event'
-                    {...a11yProps(4)}
-                    className={classes.tab}
-                  />
-
-                  <Tab
-                    icon={<AssignmentIcon />}
-                    label='Marketing'
+                    label="Event"
                     {...a11yProps(5)}
                     className={classes.tab}
                   />
 
                   <Tab
-                    icon={<PaletteIcon />}
-                    label='Press'
+                    icon={<AssignmentIcon />}
+                    label="Marketing"
                     {...a11yProps(6)}
                     className={classes.tab}
                   />
 
                   <Tab
-                    icon={<LanguageIcon />}
-                    label='Outreach'
+                    icon={<PaletteIcon />}
+                    label="Press"
                     {...a11yProps(7)}
+                    className={classes.tab}
+                  />
+
+                  <Tab
+                    icon={<LanguageIcon />}
+                    label="Outreach"
+                    {...a11yProps(8)}
                     className={classes.tab}
                   />
                 </Tabs>
@@ -210,7 +223,7 @@ function Team() {
                 const { data, color } = item;
                 return (
                   <TabPanel key={i} value={value} index={i}>
-                    <div className='w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center'>
+                    <div className="w-full grid xl:grid-cols-3 lg:grid-cols-2 xs:grid-cols-1 gap-10 justify-center">
                       {data.map((item, i) => {
                         const {
                           name,
