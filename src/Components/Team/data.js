@@ -54,8 +54,10 @@ export const Lead = [
     imageurl: Shreyansh,
     linkedinurl: "https://www.linkedin.com/in/shreyanshshukla18",
     githuburl: "https://github.com/bugbreaker18",
-    twitterUrl: "https://twitter.com/bugbreaker18?t=CkOLwAQpJMI00O84ASPxsQ&s=09",
-    quote: "Keep Dreaming, Keep Building, and let your creations, powered by AI, shape a brighter future that is transforming the world as we know it. Remember, if you're ready to explore, you're inherently interesting.",
+    twitterUrl:
+      "https://twitter.com/bugbreaker18?t=CkOLwAQpJMI00O84ASPxsQ&s=09",
+    quote:
+      "Keep Dreaming, Keep Building, and let your creations, powered by AI, shape a brighter future that is transforming the world as we know it. Remember, if you're ready to explore, you're inherently interesting.",
   },
   {
     name: "Vanshika Patel",
@@ -74,8 +76,10 @@ export const marketing = [
     imageurl: Aryan,
     linkedinurl: "https://www.linkedin.com/in/aryan-shukla-480564219",
     githuburl: "https://github.com/aryan9653",
-    twitterUrl: "https://twitter.com/_aryanshukla_?t=0IZjWzha-rK3RSC2t5Rahg&s=09",
-    quote: "\"Technical brilliance is the engine that roars, but marketing is the whisper that beckons the world to listen.\"",
+    twitterUrl:
+      "https://twitter.com/_aryanshukla_?t=0IZjWzha-rK3RSC2t5Rahg&s=09",
+    quote:
+      '"Technical brilliance is the engine that roars, but marketing is the whisper that beckons the world to listen."',
   },
 
   {
@@ -137,7 +141,7 @@ export const technical = [
     githuburl: "https://github.com/rizzabh",
     twitterUrl: "https://twitter.com/EditsRisha84245",
     post: "Jt. Technical Head",
-    quote: "\"Everything I'm not made me everything I am.\"",
+    quote: '"Everything I\'m not made me everything I am."',
   },
   {
     name: "Amit Suthar",
@@ -155,7 +159,8 @@ export const technical = [
     githuburl: "https://github.com/Vikrantsingh22",
     twitterUrl: "",
     post: "Technical member",
-    quote: "There is no doubt about the fact that future goals are going to change, but the path will never, actions are the only thing that matters.",
+    quote:
+      "There is no doubt about the fact that future goals are going to change, but the path will never, actions are the only thing that matters.",
   },
 ];
 export const facilitator = [
@@ -178,7 +183,7 @@ export const outreach = [
     githuburl: "https://GitHub.com/root-Manas",
     twitterUrl: "https://www.twitter.com/wthmanas",
     post: "Outreach Lead ",
-    quote: "\"THE FLAGS MAYBE DIFFERENT BUT THE METHODS ARE ALL THE SAME.\"",
+    quote: '"THE FLAGS MAYBE DIFFERENT BUT THE METHODS ARE ALL THE SAME."',
   },
 ];
 export const logistics = [
@@ -236,9 +241,11 @@ export const eventsCoordinator = [
     imageurl: Prince,
     linkedinurl: "https://www.linkedin.com/in/prince-sharma-1a1419253",
     githuburl: "https://github.com/Prince-1917",
-    twitterUrl: "https://twitter.com/prince_shxrmaa?t=2y1D3X9V9hUeVGTLUO4qTg&s=09",
+    twitterUrl:
+      "https://twitter.com/prince_shxrmaa?t=2y1D3X9V9hUeVGTLUO4qTg&s=09",
     post: "Event Member",
-    quote: "\"Engineering is the closest thing to magic that exists in the world.\" — Elon Musk",
+    quote:
+      '"Engineering is the closest thing to magic that exists in the world." — Elon Musk',
   },
 ];
 
