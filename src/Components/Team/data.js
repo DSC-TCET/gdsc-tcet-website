@@ -6,7 +6,6 @@
 // import Janhvi from "./Team-images/ay22_23/JanhviJaiswal_Marketing Lead.jpeg";
 // import Kaushal from "./Team-images/ay22_23/KaushalAgarwal_Event Member.jpeg";
 // import Maitri from "./Team-images/ay22_23/MaitriVaghasiya_Logistics Head.jpeg";
-import Manas from "./Team-images/ay22_23/ManasrajSingh_Event Member.jpeg";
 // import Naresh from "./Team-images/ay22_23/NareshGusain_Press Lead.jpeg";
 // import Prashant from "./Team-images/ay22_23/PrashantSingh_Marketing Member.jpeg";
 // import Prathik from "./Team-images/ay22_23/PrathikShetty_Technical Head.jpeg";
@@ -15,9 +14,12 @@ import Manas from "./Team-images/ay22_23/ManasrajSingh_Event Member.jpeg";
 // import Sanskar from "./Team-images/ay22_23/SanskarMishra_Technical Member.jpeg";
 // import Shoaib from "./Team-images/ay22_23/ShoaibShaikh_Technical Member.jpeg";
 // import Shweta from "./Team-images/ay22_23/ShwetaBhat_Secretariat.jpeg";
+// import Wilfred from "./Team-images/ay22_23/WilfredAlmeida_Joint Technical Head.jpeg";
+
+//common peeps(2022-23 to 2023-24)
+import Manas from "./Team-images/ay22_23/ManasrajSingh_Event Member.jpeg";
 import Vansh from "./Team-images/ay22_23/VanshBaghel_Technical Member.jpeg";
 import Vanshika from "./Team-images/ay22_23/VanshikaPatel_Event Co-ordinator.jpeg";
-// import Wilfred from "./Team-images/ay22_23/WilfredAlmeida_Joint Technical Head.jpeg";
 
 /* 2023-24 */
 import Shreyansh from "./Team-images/ay23_24/Shreyansh Shukla.jpg";
